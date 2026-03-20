@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANDERA — Контакты</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">WAND<em>ERA</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О компании</a></li>
+      <li><a href="gallery.html">Направления</a></li>
+      <li><a href="contacts.html" class="active">Контакты</a></li>
+    </ul>
+    <a href="contacts.html" class="nav-cta">Подобрать тур</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-bg page-hero-bg--contacts"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-tag">Свяжитесь с нами</div>
+      <h1 class="page-hero-title">Давайте<br><em>спланируем</em><br>ваше путешествие</h1>
+      <p>Мы ответим в течение часа в рабочее время</p>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ ГЛАВНЫЙ БЛОК -->
+<section class="contacts-main">
+  <div class="container">
+    <div class="contacts-grid">
+
+      <!-- ФОРМА -->
+      <div class="contact-form-block">
+        <h2 class="section-title">Подобрать тур</h2>
+        <p style="color:var(--text2);margin-bottom:2rem;">Расскажите о вашей мечте — мы подберём идеальный маршрут</p>
+
+        <div class="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Ваше имя *</label>
+              <input type="text" id="f-name" placeholder="Айгерим">
+            </div>
+            <div class="form-group">
+              <label>Телефон *</label>
+              <input type="tel" id="f-phone" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="f-email" placeholder="your@email.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Желаемое направление</label>
+              <select id="f-dest">
+                <option value="">— Выбрать страну —</option>
+                <optgroup label="Европа">
+                  <option>Франция — Париж и Прованс</option>
+                  <option>Италия — Классический маршрут</option>
+                  <option>Норвегия — Фьорды</option>
+                  <option>Греция — Острова</option>
+                  <option>Исландия — Огонь и лёд</option>
+                </optgroup>
+                <optgroup label="Азия">
+                  <option>Япония — Сезон сакуры</option>
+                  <option>Таиланд — Пхукет + Чианг-Май</option>
+                  <option>Бали — Остров богов</option>
+                  <option>Вьетнам — С севера на юг</option>
+                </optgroup>
+                <optgroup label="Африка">
+                  <option>Марокко — Сахара и медины</option>
+                  <option>Кения — Сафари</option>
+                </optgroup>
+                <optgroup label="Америка">
+                  <option>Перу — Мачу-Пикчу</option>
+                  <option>Мексика — Майя и Карибы</option>
+                </optgroup>
+                <option>Индивидуальный маршрут</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Тип путешествия</label>
+              <select id="f-type">
+                <option value="">— Выбрать тип —</option>
+                <option>Культурный / познавательный</option>
+                <option>Пляжный отдых</option>
+                <option>Природа и треккинг</option>
+                <option>Романтический</option>
+                <option>Семейный с детьми</option>
+                <option>Приключенческий</option>
+                <option>Групповой</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Предполагаемые даты</label>
+              <input type="text" id="f-dates" placeholder="Например: июнь 2025">
+            </div>
+            <div class="form-group">
+              <label>Количество человек</label>
+              <select id="f-people">
+                <option>1 человек</option>
+                <option selected>2 человека</option>
+                <option>3–4 человека</option>
+                <option>5–8 человек</option>
+                <option>9+ человек (группа)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Бюджет на человека</label>
+            <select id="f-budget">
+              <option value="">— Выбрать бюджет —</option>
+              <option>до 100 000 ₸</option>
+              <option>100 000 — 200 000 ₸</option>
+              <option>200 000 — 350 000 ₸</option>
+              <option>от 350 000 ₸</option>
+              <option>Без ограничений</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Особые пожелания</label>
+            <textarea id="f-comment" rows="3" placeholder="Расскажите о своей мечте, интересах, особых требованиях..."></textarea>
+          </div>
+          <button class="btn-primary btn-full" onclick="submitForm()">Отправить заявку →</button>
+          <p id="form-msg" class="form-msg"></p>
+        </div>
+      </div>
+
+      <!-- КОНТАКТНАЯ ИНФОРМАЦИЯ -->
+      <div class="contacts-info-col">
+        <h2 class="section-title" style="font-size:1.8rem;">Контактная информация</h2>
+
+        <div class="cinfo-card">
+          <div class="cinfo-icon">📍</div>
+          <div>
+            <h4>Адрес офиса</h4>
+            <p>Казахстан, ул. Абая, 44, офис 512<br>5 этаж, БЦ «Горизонт»</p>
+          </div>
+        </div>
+
+        <div class="cinfo-card">
+          <div class="cinfo-icon">📞</div>
+          <div>
+            <h4>Телефон</h4>
+            <p><a href="tel:+77770001122">+7 (777) 000-11-22</a></p>
+            <p><a href="tel:+77273334455">+7 (727) 333-44-55</a> (офис)</p>
+          </div>
+        </div>
+
+        <div class="cinfo-card">
+          <div class="cinfo-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:info@wandera.kz">info@wandera.kz</a></p>
+            <p><a href="mailto:booking@wandera.kz">booking@wandera.kz</a> (бронирование)</p>
+          </div>
+        </div>
+
+        <div class="cinfo-card">
+          <div class="cinfo-icon">🕐</div>
+          <div>
+            <h4>Режим работы</h4>
+            <p>Понедельник — Пятница: 09:00 – 19:00</p>
+            <p>Суббота: 10:00 – 16:00</p>
+            <p>Воскресенье: выходной</p>
+          </div>
+        </div>
+
+        <div class="cinfo-card">
+          <div class="cinfo-icon">💬</div>
+          <div>
+            <h4>Мессенджеры</h4>
+            <div class="messenger-links">
+              <a href="#" class="msg-btn">WhatsApp</a>
+              <a href="#" class="msg-btn">Telegram</a>
+              <a href="#" class="msg-btn">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-call-block">
+          <p>Хотите поговорить прямо сейчас?</p>
+          <a href="tel:+77770001122" class="btn-primary">📞 Позвонить нам</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Вопросы и ответы</div>
+      <h2 class="section-title">Часто задаваемые<br><em>вопросы</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Как происходит бронирование тура? <span class="faq-arr">+</span></div>
+        <div class="faq-a">Вы оставляете заявку, наш менеджер связывается с вами в течение часа, обсуждает детали, после чего мы выставляем счёт на предоплату 30%. Оставшиеся 70% вносятся за 30 дней до вылета.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Включена ли виза в стоимость тура? <span class="faq-arr">+</span></div>
+        <div class="faq-a">Мы помогаем с оформлением визы, но её стоимость в большинстве случаев оплачивается отдельно. Для ряда стран (Япония, Шенген) мы берём визовое сопровождение под ключ. Уточняйте при бронировании.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Что входит в стоимость тура? <span class="faq-arr">+</span></div>
+        <div class="faq-a">Как правило: авиабилеты туда-обратно, трансферы, проживание в отелях, завтраки, услуги гида, входные билеты в объекты по программе. Дополнительные экскурсии и личные расходы — по желанию.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Можно ли изменить маршрут или даты? <span class="faq-arr">+</span></div>
+        <div class="faq-a">До 45 дней до вылета — бесплатно. От 30 до 45 дней — изменение с небольшой комиссией. Менее 30 дней — возможно, но могут применяться штрафные санкции авиакомпаний и отелей.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Есть ли групповые туры и скидки? <span class="faq-arr">+</span></div>
+        <div class="faq-a">Да! Групповые туры с гарантированными выездами проводятся по расписанию (см. таблицу на главной). При бронировании 4+ мест — скидка 10%. Семейные пары и дети — специальные условия.</div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Что делать, если тур отменяется? <span class="faq-arr">+</span></div>
+        <div class="faq-a">Если отмена произошла по нашей инициативе — мы полностью возвращаем деньги или предлагаем альтернативный тур. Мы застрахованы на 50 000 000 ₸, ваши средства в полной безопасности.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОФИС -->
+<section class="office-section">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom:2rem;">Наш офис</h2>
+    <div class="office-grid">
+      <div class="office-map">
+        <div class="map-placeholder">
+          <div class="map-inner-content">
+            <span style="font-size:3rem;">📍</span>
+            <h3>WANDERA</h3>
+            <p>ул. Абая, 44, офис 512<br>БЦ «Горизонт», 5 этаж</p>
+            <a href="https://2gis.kz" target="_blank" class="btn-outline" style="display:inline-block;margin-top:1rem;">Открыть в 2ГИС →</a>
+          </div>
+        </div>
+      </div>
+      <div class="office-info">
+        <h3>Как нас найти</h3>
+        <ul class="directions-list">
+          <li>
+            <span class="dir-icon">🚇</span>
+            <div>
+              <strong>Метро</strong>
+              <p>Станция «Абай» — 3 минуты пешком по проспекту Абая на восток.</p>
+            </div>
+          </li>
+          <li>
+            <span class="dir-icon">🚌</span>
+            <div>
+              <strong>Автобус</strong>
+              <p>Маршруты №12, 18, 45, 67. Остановка «БЦ Горизонт».</p>
+            </div>
+          </li>
+          <li>
+            <span class="dir-icon">🚗</span>
+            <div>
+              <strong>Автомобиль</strong>
+              <p>Подземная парковка в БЦ «Горизонт» — первые 2 часа бесплатно для клиентов.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">WAND<em>ERA</em></a>
+      <p>Туристическая компания нового поколения. Авторские маршруты по всему миру с 2010 года.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">Telegram</a>
+        <a href="#" class="social-btn">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Направления</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Направления</h4>
+        <ul>
+          <li><a href="gallery.html">Европа</a></li>
+          <li><a href="gallery.html">Азия</a></li>
+          <li><a href="gallery.html">Африка</a></li>
+          <li><a href="gallery.html">Америка</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li>+7 (777) 000-11-22</li>
+          <li>info@wandera.kz</li>
+          <li>Пн–Пт: 09:00–19:00</li>
+          <li>Сб: 10:00–16:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2024 WANDERA. Все права защищены.</p>
+      <p>Лицензия туроператора № KZ-2010-001</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function submitForm() {
+  const name = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const msg = document.getElementById('form-msg');
+  if (!name || !phone) {
+    msg.textContent = '⚠ Пожалуйста, укажите имя и телефон.';
+    msg.className = 'form-msg form-msg--error';
+    return;
+  }
+  msg.textContent = '✓ Заявка принята! Менеджер свяжется с вами в течение часа.';
+  msg.className = 'form-msg form-msg--success';
+  ['f-name','f-phone','f-email','f-dates','f-comment'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+}
+
+function toggleFaq(item) {
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-arr').textContent = '+';
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    item.querySelector('.faq-arr').textContent = '×';
+  }
+}
+</script>
+</body>
+</html>

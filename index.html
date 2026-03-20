@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANDERA — Туристическая компания</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">WAND<em>ERA</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="about.html">О компании</a></li>
+      <li><a href="gallery.html">Направления</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <a href="contacts.html" class="nav-cta">Подобрать тур</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-horizon"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </div>
+  <div class="hero-inner container">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Откройте мир вместе с нами</p>
+      <h1 class="hero-title">Путешествия,<br>которые <em>меняют</em><br>мировоззрение</h1>
+      <p class="hero-desc">Авторские туры по 40+ странам. Персональный подход, эксклюзивные маршруты и незабываемые впечатления — с 2010 года.</p>
+      <div class="hero-actions">
+        <a href="gallery.html" class="btn-primary">Смотреть туры</a>
+        <a href="about.html" class="btn-text">Узнать о нас <span>→</span></a>
+      </div>
+    </div>
+    <div class="hero-cards">
+      <div class="dest-card dest-card--1">
+        <div class="dest-card-img" style="background:linear-gradient(160deg,#1a3a4a,#2e7d9c,#7db8cc)">
+          <span class="dest-emoji">🏔️</span>
+        </div>
+        <div class="dest-card-info">
+          <h4>Норвегия</h4>
+          <p>Фьорды и северное сияние</p>
+          <span class="dest-price">от 185 000 ₸</span>
+        </div>
+      </div>
+      <div class="dest-card dest-card--2">
+        <div class="dest-card-img" style="background:linear-gradient(160deg,#3d1a00,#8b4513,#d4860a)">
+          <span class="dest-emoji">🏜️</span>
+        </div>
+        <div class="dest-card-info">
+          <h4>Марокко</h4>
+          <p>Сахара и медины</p>
+          <span class="dest-price">от 120 000 ₸</span>
+        </div>
+      </div>
+      <div class="dest-card dest-card--3">
+        <div class="dest-card-img" style="background:linear-gradient(160deg,#0a3d2b,#1a7a4a,#4db87a)">
+          <span class="dest-emoji">🌴</span>
+        </div>
+        <div class="dest-card-info">
+          <h4>Бали</h4>
+          <p>Рисовые террасы и храмы</p>
+          <span class="dest-price">от 160 000 ₸</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Прокрутите вниз</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-item">
+        <span class="stat-num">14</span>
+        <span class="stat-label">лет на рынке</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-num">40+</span>
+        <span class="stat-label">стран</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-num">12 000+</span>
+        <span class="stat-label">довольных туристов</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat-item">
+        <span class="stat-num">4.9 ★</span>
+        <span class="stat-label">средний рейтинг</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ПОПУЛЯРНЫЕ НАПРАВЛЕНИЯ -->
+<section class="destinations-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Популярные направления</div>
+      <h2 class="section-title">Куда отправиться<br>в этом сезоне</h2>
+    </div>
+    <div class="destinations-grid">
+      <a href="gallery.html" class="tour-card tour-card--featured">
+        <div class="tour-img" style="background:linear-gradient(200deg,#0a1628,#1b4fa0,#3b82c4,#87c4d4)">
+          <span class="tour-flag">🇯🇵</span>
+        </div>
+        <div class="tour-body">
+          <div class="tour-tags"><span>Популярно</span><span>Культура</span></div>
+          <h3>Япония: Сезон сакуры</h3>
+          <p>Токио, Киото, Нара, Осака. 12 дней погружения в страну восходящего солнца.</p>
+          <div class="tour-footer">
+            <div>
+              <span class="tour-duration">12 дней</span>
+            </div>
+            <span class="tour-price">от 240 000 ₸</span>
+          </div>
+        </div>
+      </a>
+      <a href="gallery.html" class="tour-card">
+        <div class="tour-img" style="background:linear-gradient(200deg,#1a0a28,#6b2fa0,#c4608a)">
+          <span class="tour-flag">🇮🇹</span>
+        </div>
+        <div class="tour-body">
+          <div class="tour-tags"><span>Романтика</span></div>
+          <h3>Италия: Классика</h3>
+          <p>Рим, Флоренция, Венеция, Амальфи.</p>
+          <div class="tour-footer">
+            <span class="tour-duration">10 дней</span>
+            <span class="tour-price">от 195 000 ₸</span>
+          </div>
+        </div>
+      </a>
+      <a href="gallery.html" class="tour-card">
+        <div class="tour-img" style="background:linear-gradient(200deg,#0d2818,#1a6b3a,#4ab870)">
+          <span class="tour-flag">🇹🇭</span>
+        </div>
+        <div class="tour-body">
+          <div class="tour-tags"><span>Пляж</span></div>
+          <h3>Таиланд: Пхукет + Чианг-Май</h3>
+          <p>Пляжный отдых + горный треккинг.</p>
+          <div class="tour-footer">
+            <span class="tour-duration">14 дней</span>
+            <span class="tour-price">от 175 000 ₸</span>
+          </div>
+        </div>
+      </a>
+      <a href="gallery.html" class="tour-card">
+        <div class="tour-img" style="background:linear-gradient(200deg,#280a0a,#a03030,#d47840)">
+          <span class="tour-flag">🇵🇪</span>
+        </div>
+        <div class="tour-body">
+          <div class="tour-tags"><span>Приключение</span></div>
+          <h3>Перу: Мачу-Пикчу</h3>
+          <p>Амазонка, Куско, Мачу-Пикчу, озеро Титикака.</p>
+          <div class="tour-footer">
+            <span class="tour-duration">15 дней</span>
+            <span class="tour-price">от 280 000 ₸</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="section-cta">
+      <a href="gallery.html" class="btn-outline">Все направления →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ТАБЛИЦА ТУРОВ -->
+<section class="table-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Ближайшие туры</div>
+      <h2 class="section-title">Расписание <em>выездов</em><br>на 2025 год</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="tours-table">
+        <thead>
+          <tr>
+            <th>Направление</th>
+            <th>Даты</th>
+            <th>Продолж.</th>
+            <th>Тип тура</th>
+            <th>Цена</th>
+            <th>Мест осталось</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="flag">🇯🇵</span> Япония — Токио &amp; Киото</td>
+            <td>15–27 апр.</td>
+            <td>12 дней</td>
+            <td><span class="badge badge-culture">Культура</span></td>
+            <td class="price-cell">от 240 000 ₸</td>
+            <td><span class="seats-badge seats-few">3 места</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇮🇸</span> Исландия — Огонь и лёд</td>
+            <td>1–11 мая</td>
+            <td>10 дней</td>
+            <td><span class="badge badge-adventure">Природа</span></td>
+            <td class="price-cell">от 310 000 ₸</td>
+            <td><span class="seats-badge seats-ok">8 мест</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇮🇹</span> Италия — Классический маршрут</td>
+            <td>20–30 мая</td>
+            <td>10 дней</td>
+            <td><span class="badge badge-culture">Культура</span></td>
+            <td class="price-cell">от 195 000 ₸</td>
+            <td><span class="seats-badge seats-ok">12 мест</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇲🇦</span> Марокко — Сахара и медины</td>
+            <td>5–15 июня</td>
+            <td>10 дней</td>
+            <td><span class="badge badge-adventure">Экзотика</span></td>
+            <td class="price-cell">от 120 000 ₸</td>
+            <td><span class="seats-badge seats-ok">15 мест</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇳🇴</span> Норвегия — Страна фьордов</td>
+            <td>10–22 июня</td>
+            <td>12 дней</td>
+            <td><span class="badge badge-nature">Природа</span></td>
+            <td class="price-cell">от 185 000 ₸</td>
+            <td><span class="seats-badge seats-few">5 мест</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇹🇭</span> Таиланд — Пхукет + Чианг-Май</td>
+            <td>1–14 июля</td>
+            <td>14 дней</td>
+            <td><span class="badge badge-beach">Пляж</span></td>
+            <td class="price-cell">от 175 000 ₸</td>
+            <td><span class="seats-badge seats-full">Нет мест</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇮🇩</span> Бали — Остров богов</td>
+            <td>15–26 июля</td>
+            <td>11 дней</td>
+            <td><span class="badge badge-beach">Пляж</span></td>
+            <td class="price-cell">от 160 000 ₸</td>
+            <td><span class="seats-badge seats-ok">10 мест</span></td>
+          </tr>
+          <tr>
+            <td><span class="flag">🇵🇪</span> Перу — Мачу-Пикчу &amp; Амазонка</td>
+            <td>5–19 авг.</td>
+            <td>15 дней</td>
+            <td><span class="badge badge-adventure">Приключение</span></td>
+            <td class="price-cell">от 280 000 ₸</td>
+            <td><span class="seats-badge seats-ok">7 мест</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ПОЧЕМУ МЫ -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-visual">
+        <div class="why-img-stack">
+          <div class="why-img why-img-1" style="background:linear-gradient(135deg,#0f2040,#1a5080,#3a90b0)">
+            <span>✈️</span>
+          </div>
+          <div class="why-img why-img-2" style="background:linear-gradient(135deg,#2a1040,#6b2fa0,#c46090)">
+            <span>🌍</span>
+          </div>
+          <div class="why-badge-float">
+            <span class="why-badge-num">12 000+</span>
+            <span class="why-badge-txt">туристов</span>
+          </div>
+        </div>
+      </div>
+      <div class="why-text">
+        <div class="section-tag">Наши преимущества</div>
+        <h2 class="section-title">Почему путешественники<br>выбирают <em>WANDERA</em></h2>
+        <ul class="why-list">
+          <li>
+            <div class="why-icon">🗺️</div>
+            <div>
+              <strong>Авторские маршруты</strong>
+              <p>Каждый тур разработан нашими экспертами-путешественниками. Только уникальные локации, без шаблонных программ.</p>
+            </div>
+          </li>
+          <li>
+            <div class="why-icon">👤</div>
+            <div>
+              <strong>Персональный менеджер</strong>
+              <p>С момента первого обращения до возвращения домой — ваш личный менеджер всегда на связи 24/7.</p>
+            </div>
+          </li>
+          <li>
+            <div class="why-icon">🛡️</div>
+            <div>
+              <strong>Гарантия безопасности</strong>
+              <p>Страховка, проверенные отели, лицензированные гиды — мы думаем о каждой детали вашего путешествия.</p>
+            </div>
+          </li>
+          <li>
+            <div class="why-icon">💳</div>
+            <div>
+              <strong>Гибкая оплата</strong>
+              <p>Оплата в рассрочку, скидки для семей и групп, раннее бронирование со скидкой до 20%.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-tag">Отзывы клиентов</div>
+      <h2 class="section-title">Что говорят<br><em>путешественники</em></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Тур в Японию превзошёл все ожидания. Гид Сейтжан знал каждый уголок Киото. Маршрут был идеально выстроен — не слишком интенсивный, но насыщенный. Уже бронируем Перу!»</p>
+        <div class="review-author">
+          <div class="review-avatar">АК</div>
+          <div>
+            <strong>Айгерим К.</strong>
+            <span>Тур в Японию, март 2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card review-card--accent">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Марокко с WANDERA — это совсем другое! Мы ночевали в палатке в Сахаре, ели настоящую таджин в берберской деревне, объездили все медины. Это было лучшее путешествие в моей жизни.»</p>
+        <div class="review-author">
+          <div class="review-avatar">ДМ</div>
+          <div>
+            <strong>Данияр М.</strong>
+            <span>Тур в Марокко, январь 2024</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">«Путешествовали с семьёй — 2 взрослых и ребёнок 8 лет. Менеджер учла все наши пожелания, выбрала отели с детской анимацией. Таиланд был сказочным!»</p>
+        <div class="review-author">
+          <div class="review-avatar">НС</div>
+          <div>
+            <strong>Нурия С.</strong>
+            <span>Тур в Таиланд, февраль 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-bg-shapes">
+        <div class="cta-shape-1"></div>
+        <div class="cta-shape-2"></div>
+      </div>
+      <div class="cta-content">
+        <div class="section-tag">Специальное предложение</div>
+        <h2>Раннее бронирование —<br>скидка <em>до 20%</em></h2>
+        <p>Забронируйте тур на лето 2025 до 31 марта и сэкономьте до 20% от стоимости. Предложение ограничено.</p>
+        <a href="contacts.html" class="btn-primary btn-lg">Получить консультацию</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">WAND<em>ERA</em></a>
+      <p>Туристическая компания нового поколения. Авторские маршруты по всему миру с 2010 года.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">Telegram</a>
+        <a href="#" class="social-btn">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Направления</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Направления</h4>
+        <ul>
+          <li><a href="gallery.html">Европа</a></li>
+          <li><a href="gallery.html">Азия</a></li>
+          <li><a href="gallery.html">Африка</a></li>
+          <li><a href="gallery.html">Америка</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li>+7 (777) 000-11-22</li>
+          <li>info@wandera.kz</li>
+          <li>Пн–Пт: 09:00–19:00</li>
+          <li>Сб: 10:00–16:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2024 WANDERA. Все права защищены.</p>
+      <p>Лицензия туроператора № KZ-2010-001</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

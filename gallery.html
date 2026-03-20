@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WANDERA — Направления</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">WAND<em>ERA</em></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="about.html">О компании</a></li>
+      <li><a href="gallery.html" class="active">Направления</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <a href="contacts.html" class="nav-cta">Подобрать тур</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-bg page-hero-bg--gallery"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="section-tag">Направления</div>
+      <h1 class="page-hero-title">40+ стран<br><em>ждут вас</em></h1>
+      <p>Авторские маршруты для любого типа путешественника и любого бюджета</p>
+    </div>
+  </div>
+</section>
+
+<!-- ФИЛЬТР -->
+<section class="gallery-section">
+  <div class="container">
+
+    <div class="gallery-filters">
+      <button class="gf-btn active" onclick="filterTours('all', this)">Все направления</button>
+      <button class="gf-btn" onclick="filterTours('culture', this)">🏛️ Культура</button>
+      <button class="gf-btn" onclick="filterTours('nature', this)">🌿 Природа</button>
+      <button class="gf-btn" onclick="filterTours('beach', this)">🏖️ Пляжный</button>
+      <button class="gf-btn" onclick="filterTours('adventure', this)">🧗 Приключение</button>
+      <button class="gf-btn" onclick="filterTours('romantic', this)">💑 Романтика</button>
+    </div>
+
+    <!-- ЕВРОПА -->
+    <div class="region-block">
+      <h3 class="region-title">🌍 Европа</h3>
+      <div class="tours-gallery-grid" id="gallery">
+
+        <div class="tg-card" data-type="culture romantic">
+          <div class="tg-img" style="background:linear-gradient(160deg,#0d1a38,#1b4fa0,#4a8fd4)">
+            <span class="tg-flag">🇫🇷</span>
+            <div class="tg-badges"><span>Культура</span><span>Романтика</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Париж и Прованс</h4>
+            <p>Лувр, Монмартр, лавандовые поля, вина Бордо. Квинтэссенция Франции за 9 дней.</p>
+            <div class="tg-meta">
+              <span>📅 9 дней</span>
+              <span>👥 до 12 чел.</span>
+              <span class="tg-price">от 175 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="culture">
+          <div class="tg-img" style="background:linear-gradient(160deg,#280a0a,#9c3030,#d47840)">
+            <span class="tg-flag">🇮🇹</span>
+            <div class="tg-badges"><span>Культура</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Италия: Рим — Флоренция — Венеция</h4>
+            <p>Классический итальянский маршрут: Колизей, Уффици, Гранд-канал и гондолы.</p>
+            <div class="tg-meta">
+              <span>📅 10 дней</span>
+              <span>👥 до 15 чел.</span>
+              <span class="tg-price">от 195 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="nature">
+          <div class="tg-img" style="background:linear-gradient(160deg,#0a1a2a,#1a4a7a,#4a9ab0)">
+            <span class="tg-flag">🇳🇴</span>
+            <div class="tg-badges"><span>Природа</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Норвегия: Страна фьордов</h4>
+            <p>Нерёй-фьорд, Берген, Лофотенские острова. Северное сияние зимой.</p>
+            <div class="tg-meta">
+              <span>📅 12 дней</span>
+              <span>👥 до 10 чел.</span>
+              <span class="tg-price">от 185 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="culture romantic">
+          <div class="tg-img" style="background:linear-gradient(160deg,#1a0d2a,#5a3090,#9060c0)">
+            <span class="tg-flag">🇬🇷</span>
+            <div class="tg-badges"><span>Романтика</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Греция: Острова Эгейского моря</h4>
+            <p>Санторини, Миконос, Крит. Белые домики, синие купола, лучшие закаты.</p>
+            <div class="tg-meta">
+              <span>📅 11 дней</span>
+              <span>👥 до 14 чел.</span>
+              <span class="tg-price">от 155 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- АЗИЯ -->
+    <div class="region-block">
+      <h3 class="region-title">🌏 Азия</h3>
+      <div class="tours-gallery-grid">
+
+        <div class="tg-card" data-type="culture">
+          <div class="tg-img" style="background:linear-gradient(160deg,#0a1628,#1b4fa0,#3b82c4,#87c4d4)">
+            <span class="tg-flag">🇯🇵</span>
+            <div class="tg-badges"><span>Популярно</span><span>Культура</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Япония: Сезон сакуры</h4>
+            <p>Токио, Никко, Киото, Нара, Осака. Храмы, чайные церемонии, ночной Синдзюку.</p>
+            <div class="tg-meta">
+              <span>📅 12 дней</span>
+              <span>👥 до 12 чел.</span>
+              <span class="tg-price">от 240 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="beach">
+          <div class="tg-img" style="background:linear-gradient(160deg,#0d2818,#1a6b3a,#4ab870)">
+            <span class="tg-flag">🇹🇭</span>
+            <div class="tg-badges"><span>Пляж</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Таиланд: Пхукет + Чианг-Май</h4>
+            <p>Изумрудное море, острова на катере, горные племена севера, слоновий парк.</p>
+            <div class="tg-meta">
+              <span>📅 14 дней</span>
+              <span>👥 до 16 чел.</span>
+              <span class="tg-price">от 175 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="beach nature">
+          <div class="tg-img" style="background:linear-gradient(160deg,#0a3d2b,#1a7a4a,#4db87a)">
+            <span class="tg-flag">🇮🇩</span>
+            <div class="tg-badges"><span>Пляж</span><span>Природа</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Бали: Остров богов</h4>
+            <p>Рисовые террасы Убуда, вулкан Батур, пляжи Семиньяк, храмы на воде.</p>
+            <div class="tg-meta">
+              <span>📅 11 дней</span>
+              <span>👥 до 14 чел.</span>
+              <span class="tg-price">от 160 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="adventure nature">
+          <div class="tg-img" style="background:linear-gradient(160deg,#1a1a0a,#5a5a10,#8a7a20)">
+            <span class="tg-flag">🇻🇳</span>
+            <div class="tg-badges"><span>Приключение</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Вьетнам: С севера на юг</h4>
+            <p>Ханой, бухта Халонг, Хойан, Хошимин. Круиз по бухте Халонг.</p>
+            <div class="tg-meta">
+              <span>📅 13 дней</span>
+              <span>👥 до 15 чел.</span>
+              <span class="tg-price">от 145 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- АФРИКА -->
+    <div class="region-block">
+      <h3 class="region-title">🌍 Африка</h3>
+      <div class="tours-gallery-grid">
+
+        <div class="tg-card" data-type="adventure">
+          <div class="tg-img" style="background:linear-gradient(160deg,#3d1a00,#8b4513,#d4860a)">
+            <span class="tg-flag">🇲🇦</span>
+            <div class="tg-badges"><span>Экзотика</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Марокко: Сахара и медины</h4>
+            <p>Маракеш, Фес, ущелье Тодры, ночь в Сахаре, Голубой город Шефшауэн.</p>
+            <div class="tg-meta">
+              <span>📅 10 дней</span>
+              <span>👥 до 12 чел.</span>
+              <span class="tg-price">от 120 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="adventure nature">
+          <div class="tg-img" style="background:linear-gradient(160deg,#1a1a0a,#3a3a10,#6a8a20)">
+            <span class="tg-flag">🇰🇪</span>
+            <div class="tg-badges"><span>Природа</span><span>Приключение</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Кения: Сафари в Масаи-Мара</h4>
+            <p>Великая миграция, «Большая пятёрка», племя масаи, озеро Накуру с фламинго.</p>
+            <div class="tg-meta">
+              <span>📅 10 дней</span>
+              <span>👥 до 8 чел.</span>
+              <span class="tg-price">от 320 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- АМЕРИКА -->
+    <div class="region-block">
+      <h3 class="region-title">🌎 Америка</h3>
+      <div class="tours-gallery-grid">
+
+        <div class="tg-card" data-type="adventure">
+          <div class="tg-img" style="background:linear-gradient(160deg,#280a0a,#a03030,#d47840)">
+            <span class="tg-flag">🇵🇪</span>
+            <div class="tg-badges"><span>Приключение</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Перу: Мачу-Пикчу и Амазонка</h4>
+            <p>Лима, Куско, треккинг в Мачу-Пикчу, тропический лес Амазонки, озеро Титикака.</p>
+            <div class="tg-meta">
+              <span>📅 15 дней</span>
+              <span>👥 до 10 чел.</span>
+              <span class="tg-price">от 280 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="nature adventure">
+          <div class="tg-img" style="background:linear-gradient(160deg,#0a1a28,#1a5a8a,#3a90b0)">
+            <span class="tg-flag">🇮🇸</span>
+            <div class="tg-badges"><span>Природа</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Исландия: Огонь и лёд</h4>
+            <p>Гейзеры, водопады, лавовые поля, ледниковые пещеры, северное сияние.</p>
+            <div class="tg-meta">
+              <span>📅 10 дней</span>
+              <span>👥 до 10 чел.</span>
+              <span class="tg-price">от 310 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-card" data-type="culture adventure">
+          <div class="tg-img" style="background:linear-gradient(160deg,#2a0a0a,#8a1a1a,#c04a20)">
+            <span class="tg-flag">🇲🇽</span>
+            <div class="tg-badges"><span>Культура</span></div>
+          </div>
+          <div class="tg-body">
+            <h4>Мексика: Майя и Карибы</h4>
+            <p>Чичен-Ица, Тулум, Мехико, пляжи Кинтана-Роо, сенот Икиль.</p>
+            <div class="tg-meta">
+              <span>📅 12 дней</span>
+              <span>👥 до 14 чел.</span>
+              <span class="tg-price">от 220 000 ₸</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-bg-shapes">
+        <div class="cta-shape-1"></div>
+        <div class="cta-shape-2"></div>
+      </div>
+      <div class="cta-content">
+        <div class="section-tag">Не нашли подходящий тур?</div>
+        <h2>Создадим маршрут<br><em>специально для вас</em></h2>
+        <p>Индивидуальный тур под ваш запрос, бюджет и даты.</p>
+        <a href="contacts.html" class="btn-primary btn-lg">Заказать индивидуальный тур</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">WAND<em>ERA</em></a>
+      <p>Туристическая компания нового поколения. Авторские маршруты по всему миру с 2010 года.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">Instagram</a>
+        <a href="#" class="social-btn">Telegram</a>
+        <a href="#" class="social-btn">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="gallery.html">Направления</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Направления</h4>
+        <ul>
+          <li><a href="gallery.html">Европа</a></li>
+          <li><a href="gallery.html">Азия</a></li>
+          <li><a href="gallery.html">Африка</a></li>
+          <li><a href="gallery.html">Америка</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li>+7 (777) 000-11-22</li>
+          <li>info@wandera.kz</li>
+          <li>Пн–Пт: 09:00–19:00</li>
+          <li>Сб: 10:00–16:00</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2024 WANDERA. Все права защищены.</p>
+      <p>Лицензия туроператора № KZ-2010-001</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function filterTours(type, btn) {
+  document.querySelectorAll('.gf-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.tg-card').forEach(card => {
+    if (type === 'all') {
+      card.style.display = '';
+    } else {
+      const types = card.dataset.type || '';
+      card.style.display = types.includes(type) ? '' : 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>
